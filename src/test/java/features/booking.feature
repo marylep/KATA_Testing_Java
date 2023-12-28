@@ -32,9 +32,9 @@ Feature: Book a room
     Then i get the correct validation messages for scenario "<scenario>"
     Examples:
       | scenario             | FirstName | LastName | Email          | Phone       | CheckInDate | CheckOutDate |
-      | phone number missing | John      | Doe      | jdoe@gmail.com | null        | 2023-12-20  | 2023-12-30   |
-      | email missing        | John      | Doe      | null           | 12345678901 | 2023-12-20  | 2023-12-30   |
-      | last name missing    | John      | null     | jdoe@gmail.com | 12345678901 | 2023-12-20  | 2023-12-30   |
-      | first name missing   | null      | Doe      | jdoe@gmail.com | 12345678901 | 2023-12-20  | 2023-12-30   |
+      | phone number missing | John      | Doe      | jdoe@gmail.com | null        | 2023-12-20  | 2023-12-22   |
+      | email missing        | John      | Doe      | null           | 12345678901 | 2023-12-20  | 2023-12-22   |
+      | last name missing    | John      | null     | jdoe@gmail.com | 12345678901 | 2023-12-20  | 2023-12-22   |
+      | first name missing   | null      | Doe      | jdoe@gmail.com | 12345678901 | 2023-12-20  | 2023-12-22   |
       | no dates selected    | John      | Doe      | jdoe@gmail.com | 12345678901 | null        | null         |
-      | invalid email        | John      | Doe      | jdoe           | 12345678901 | 2023-12-20  | 2023-12-30   |
+      | invalid email        | John      | Doe      | jdoe           | 12345678901 | 2023-12-20  | 2023-12-22   |
